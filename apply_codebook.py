@@ -63,7 +63,6 @@ def create_parser():
         '--min_count', type=int, default=5, metavar='FREQ',
         help='Stop if no symbol pair has frequency >= FREQ (default: %(default)s))')
     
-    
     parser.add_argument(
         '--verbose', '-v', action="store_true",
         help="verbose mode.")

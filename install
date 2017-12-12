@@ -1,3 +1,4 @@
+# Unsupervised Word Segmenter using Minimum Description Length for Neural Machine Translation
 
 cd ./SuffixArray
 python3 setup.py install
@@ -5,7 +6,6 @@ python3 setup.py install
 pip install tdqm
 
  
-
 
 
 
