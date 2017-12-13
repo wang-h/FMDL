@@ -82,9 +82,12 @@ def commit(bigram, pair_stats, codebook, sa, min_count):
         sw = sa.text[i + 2]
         if (pw, w1) in pair_stats:
             pair_stats[(pw, w1)] -= 1
+        else:
+            cw1w2 -= 1
         if (w2, sw) in pair_stats:
             pair_stats[(w2, sw)] -= 1
-
+        else:
+            cw1w2 -= 1
     codebook[w1 + w2] += cw1w2
     codebook[w1] -= cw1w2
     codebook[w2] -= cw1w2
