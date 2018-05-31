@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC   -shared  -o _drittel.so CMakeFiles/_drittel.dir/drittelPYTHON_wrap.cxx.o CMakeFiles/_drittel.dir/drittel.cc.o -Wl,-rpath,/home/Wang_Hao/anaconda3/lib /home/Wang_Hao/anaconda3/lib/libpython3.6m.so 

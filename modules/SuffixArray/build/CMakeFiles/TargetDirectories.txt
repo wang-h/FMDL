@@ -1,3 +1,0 @@
-/home/Wang_Hao/FMMDL/modules/SuffixArray/build/CMakeFiles/rebuild_cache.dir
-/home/Wang_Hao/FMMDL/modules/SuffixArray/build/CMakeFiles/_drittel.dir
-/home/Wang_Hao/FMMDL/modules/SuffixArray/build/CMakeFiles/edit_cache.dir
