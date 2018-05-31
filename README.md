@@ -1,3 +1,5 @@
+Unsupervised Word Segmenter using Minimum Description Length for Neural Machine Translation
+=======
 Are you looking for an simple python implementation of Byte Pair Encoding (BPE)https://github.com/rsennrich/subword-nmt.git but for Chinese/Japanese? 
 
 Though it is more than BPE, we developed yet another a fastest unsupervised subword segmenter for these languages.
@@ -51,5 +53,4 @@ PUBLICATIONS
 
 not yet.
 
-=======
-Unsupervised Word Segmenter using Minimum Description Length for Neural Machine Translation
+
