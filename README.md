@@ -40,14 +40,6 @@ To segment text into subword sequences, do the following:
     python apply_mdl.py --input {test.txt} --codebook {codebook.txt} > {test.seg.txt}
 
 
-INSTALLATION
-------------
-alternatively, you can install via pip:
-    
-
-    pip install https://github.com/rsennrich/subword-nmt/archive/master.zip
-
-
 
 PUBLICATIONS
 ------------
