@@ -4,7 +4,7 @@ Are you looking for a simple python implementation of [Byte Pair Encoding (BPE)]
 
 Though it is more than BPE, we developed yet another a fastest unsupervised subword segmenter for these languages using the principle of Minimum Description Length (MDL).
 
-You can train a FMDL-based subword segmentation model less than 1 minute!
+You can train a FMDL-based subword segmentation model in 1 minute!
 
 This repository contains preprocessing scripts to segment Chinese/Japanese text into subword
 units. We design a variation of MDL with additional finite vocabulary restriction. The experiment results on Neural Machine Translation have shown competitive translation scores compared with SentencePiece or subword-nmt + Segmenter.
