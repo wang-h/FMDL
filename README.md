@@ -17,8 +17,11 @@ The scripts are executable stand-alone, but you need to compile SuffixArray libr
 
 REQUIREMENTS
 ------------
+
 python version >= 3.6 (recommended)
+
 SWIG Version >= 3.0.8 (recommended)
+
 cmake version >= 3.9.4 (recommended)
 
 
