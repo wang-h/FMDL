@@ -2,7 +2,7 @@ Unsupervised Word Segmenter using Minimum Description Length for Neural Machine 
 =======
 Are you looking for a simple python implementation of [Byte Pair Encoding (BPE)](https://github.com/rsennrich/subword-nmt.git) but for Chinese/Japanese? 
 
-Though it is more than BPE, we developed yet another a fastest unsupervised subword segmenter for these languages using the principle of Minimum Description Length (MDL).
+Though it is more than BPE, we developed yet another fastest unsupervised subword segmenter for these languages using the principle of Minimum Description Length (MDL).
 
 You can train a FMDL-based subword segmentation model in 1 minute!
 
