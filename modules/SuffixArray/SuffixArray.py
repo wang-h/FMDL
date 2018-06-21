@@ -12,7 +12,7 @@ from ._drittel import suffix_array
 
 ###############################################################################
 
-__author__ = '##'
+__author__ = 'Yves Lepage'
 # Program a Python interface for the C++ program:
 __date__, __version__ = '12/03/2014', '1.0'
                                             # Kärkkäinen and Sanders algorithm in C++ as _drittel.so using SWIG.

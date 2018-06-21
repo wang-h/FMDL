@@ -126,8 +126,11 @@ class FMDL(object):
                     format(init_vocab_size, len(self.codebook)))
                 return False
             pair, total, cost = candidate
-            if self.commit_and_success(pair, total, cost):
-                updated += 1
+            try:
+                if self.commit_and_success(pair, total, cost):
+                    updated += 1  
+            except:
+                logger.info("Discard {}, with cost={}".format(pair, cost))  
         logger.info("Vocabulary size: {} -> {}".\
             format(init_vocab_size, len(self.codebook)))
         return True
