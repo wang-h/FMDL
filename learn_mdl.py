@@ -47,7 +47,11 @@ class FMDL(object):
                              pair_stats.most_common(self.vocab_size // 2))
         for pair, total in common_pair:
             w1, w2 = pair
-            cost = self.compute_cost(w1, w2, total)
+            try:
+                cost = self.compute_cost(w1, w2, total)  
+            except:
+                logger.info("Discard {} {}".format(w1, w2))
+                continue
             if sum(cost) < 0:
                 candidates.append((pair, total, cost))
         ceil = math.ceil(len(candidates) * threshold)
