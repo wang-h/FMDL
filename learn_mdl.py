@@ -197,7 +197,7 @@ def create_parser():
         '--iterations', '-i', type=int, default=3,
         help="# of iterations for FMDL learning (default: %(default)s).")
     parser.add_argument(
-        '--min_count', type=int, default=0,
+        '--min_count', type=int, default=1,
         help="ignore the new words with a frequency lower than this. (default: %(default)s).")
     parser.add_argument(
         '--vocab_size', type=int, default=20000,

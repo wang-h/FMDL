@@ -156,7 +156,7 @@ class DataSet(list):
         self.path = path
         with open(self.path, "r") as fin:
             for i, sent in enumerate(fin):
-                sent = recursive_binary_merge(sent.rstrip("\n"), model)
+                sent = recursive_binary_merge([tuple(x) for x in sent.rstrip("\n")], model)
                 yield " ".join("".join(w) for w in sent) 
 
     def show_samples(self, file=sys.stderr):
