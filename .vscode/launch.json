@@ -11,8 +11,10 @@
             "request": "launch",
             "program": "${file}",
             "args": [
-                "--train",
-                "test.ja"
+                "--input",
+                "dev.unseg.zh",
+                "--model",
+                "model"
             ]
         },
         {

@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/itigo/Uploads/nmt/FMDL/modules/SuffixArray/drittel.h
+
+/itigo/Uploads/nmt/FMDL/modules/SuffixArray/drittel.i
+drittel.h
+/itigo/Uploads/nmt/FMDL/modules/SuffixArray/drittel.h
+drittel.h
+/itigo/Uploads/nmt/FMDL/modules/SuffixArray/drittel.h
+

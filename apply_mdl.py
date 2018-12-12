@@ -15,7 +15,8 @@ import argparse
 from collections import Counter
 from modules.DataSet import EOS
 from modules.DataSet import DataSet
-from modules.CodeBook import CodeBook
+from modules.Vocab import Vocab
+from learn_mdl import FMDL
 try:
     from tqdm import tqdm
 except ImportError:
@@ -32,21 +33,26 @@ logger = logging.getLogger("FMDL")
 
 
 
+def read_model(model_file):
+    model = dict()
+    for line in model_file:
+        col = line.rstrip("\n").split("\t")
+        model[tuple(x for x in col[0])] = float(col[1])
+    return model
 
 def main(args):
-    codebook = CodeBook()
-    codebook.load(args.codebook)
-    dataset = DataSet(args.input)
-    dataset.apply_codebook(codebook, resample=False)
-    for line in dataset.segmented():
+    dataset = DataSet()
+    model = read_model(args.model)
+    for line in dataset.segment(model, args.input):
         print(line)
+    
     
 
 
 def create_parser():
     parser = argparse.ArgumentParser(
         formatter_class=argparse.RawDescriptionHelpFormatter,
-        description="apply learned (FMDL-based) codebook to word segmentation")
+        description="apply learned (FMDL-based) vocab to word segmentation")
     parser.add_argument(
         '--input', '-i', type=str, metavar='PATH',
         help="Input unsegmented text for training (default: standard input).")
@@ -55,9 +61,9 @@ def create_parser():
         metavar='PATH',
         help="Output segmented (default: standard output)")
     parser.add_argument(
-        '--codebook', '-c', type=argparse.FileType('r'), required=True,
+        '--model', '-m', type=argparse.FileType('r'), required=True,
         metavar='FILE',
-        help="Output file for codebook")
+        help="Output file for model")
     parser.add_argument(
         '--verbose', '-v', action="store_true",
         help="verbose mode, print the details.")

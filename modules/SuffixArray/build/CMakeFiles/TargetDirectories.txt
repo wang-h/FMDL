@@ -1,0 +1,4 @@
+/itigo/Uploads/nmt/FMDL/modules/SuffixArray/build/CMakeFiles/rebuild_cache.dir
+/itigo/Uploads/nmt/FMDL/modules/SuffixArray/build/CMakeFiles/edit_cache.dir
+/itigo/Uploads/nmt/FMDL/modules/SuffixArray/build/CMakeFiles/gen_drittel_drittelPYTHON_wrap.dir
+/itigo/Uploads/nmt/FMDL/modules/SuffixArray/build/CMakeFiles/_drittel.dir
