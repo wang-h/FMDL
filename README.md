@@ -1,13 +1,14 @@
 Efficient Unsupervised Word Segmenter using Minimum Description Length for Neural Machine Translation
 =======
-Are you looking for a simple python implementation of [Byte Pair Encoding (BPE)](https://github.com/rsennrich/subword-nmt.git) for Chinese/Japanese? 
+Are you looking for a simple implementation of [Byte Pair Encoding (BPE)](https://github.com/rsennrich/subword-nmt.git) for Chinese/Japanese? 
 
-Though it is more than BPE, we developed yet another unsupervised subword segmenter for these languages using the principle of Minimum Description Length (MDL).
+We developed yet another unsupervised word segmenter for East Asian languages.
+This is based on the principle of Minimum Description Length (MDL) imposing the restriction of finite vocabulary, as we called FMDL.
 
-You can train an FMDL-based subword segmentation model in 1 minute!
+Theorically, FMDL considers more than BPE given the minimal coding cost in vocabulary,
+while this implementation is more simple and efficient than the SentencePiece version of BPE.  It requires only 1 minute to train a segmentation model!
 
-This repository contains preprocessing scripts to segment Chinese/Japanese text into subword
-units. We design a variation of MDL with additional finite vocabulary restriction. The experiment results in Neural Machine Translation have shown competitive translation scores compared with SentencePiece or subword-nmt + Segmenter.
+This repository contains main codes of FMDL for word segmentation (not only subwords, maybe longer than the plain word) for Chinese/Japanese text processing.  Experimental results in Neural Machine Translation shows competitive translation scores compared with SentencePiece or BPE.
 
 RUN WITHOUT INSTALLATION
 ------------
