@@ -7,7 +7,7 @@ from copy import deepcopy
 from collections import Counter
 from modules.SuffixArray.SuffixArray import IntegerSuffixArray
 EOS = "\n"
-
+SPACE= "@@"
 
 # def tokenizer(line, trie):
 #     if trie is not None:
@@ -31,8 +31,9 @@ EOS = "\n"
 #     return pieces
 
 def tokenizer(sent):
-    return [(x,) for x in list(sent.rstrip("\n"))]
-
+    return [(x,) for x in list(sent.replace(" ", SPACE).rstrip("\n"))]
+    # l = sent.replace(" ", SPACE).rstrip("\n")
+    # return [(x1+x2, ) for x1,x2 in zip(list(l), list(l)[1:])]
 
     # if model is not None:
     #     sentence = binary_merge(sent, model)

@@ -43,6 +43,14 @@ To segment text into subword sequences, do the following:
     python apply_mdl.py --input {test.txt} --model {fmdl.model} > {test.seg.txt}
 
 
+Comparison on ASPEC Corpus 
+------------
+
+| Japanese--Chinese| WER   | BLEU  | NIST  | TER   | RIBES |
+| -----------------| ------| ------| ------| ------| ------|
+| BPE              | Content Cell  |
+| SentencePiece    | 0.4551| 32.14 | 8.380 | 0.4830| 83.70 |
+| FM-MDL           | 0.4353| 32.12 | 8.477 | 0.4647| 84.47 |
 
 PUBLICATIONS
 ------------

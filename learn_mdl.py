@@ -194,10 +194,10 @@ def create_parser():
         metavar='FILE',
         help="Output file for vocab")
     parser.add_argument(
-        '--iterations', '-i', type=int, default=3,
+        '--iterations', '-i', type=int, default=20,
         help="# of iterations for FMDL learning (default: %(default)s).")
     parser.add_argument(
-        '--min_count', type=int, default=1,
+        '--min_count', type=int, default=5,
         help="ignore the new words with a frequency lower than this. (default: %(default)s).")
     parser.add_argument(
         '--vocab_size', type=int, default=20000,
