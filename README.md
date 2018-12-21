@@ -46,6 +46,7 @@ To segment text into subword sequences, do the following:
 Comparison on ASPEC Corpus 
 ------------
 Vocab = 20K
+
 | Japanese--Chinese| WER   | BLEU  | NIST  | TER   | RIBES |
 | -----------------| ------| ------| ------| ------| ------|
 | NMT (baseline)   | 45.29 | 30.18 | 8.147 | 47.93 | 83.34 |
