@@ -3,7 +3,7 @@ Efficient Unsupervised Word Segmenter using Minimum Description Length for Neura
 Are you looking for a simple implementation of [Byte Pair Encoding (BPE)](https://github.com/rsennrich/subword-nmt.git) for Chinese/Japanese? 
 
 We developed yet another unsupervised word segmenter for East Asian languages.
-This is based on the principle of Minimum Description Length (MDL) imposing the restriction of finite vocabulary, as we called FMDL.
+This is based on the principle of Minimum Description Length (MDL) imposing the restriction of finite vocabulary, so we call it "FMDL".
 
 Theorically, FMDL considers more than BPE given the minimal coding cost in vocabulary,
 while this implementation is more simple and efficient than the SentencePiece version of BPE.  It requires only 1 minute to train a segmentation model!
