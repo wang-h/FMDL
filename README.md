@@ -45,13 +45,14 @@ To segment text into subword sequences, do the following:
 
 Comparison on ASPEC Corpus 
 ------------
-
+Vocab = 20K
 | Japanese--Chinese| WER   | BLEU  | NIST  | TER   | RIBES |
 | -----------------| ------| ------| ------| ------| ------|
-| NMT (baseline)   | 0.4529| 30.18 | 8.147 | 0.4793| 83.34 |
-| BPE              | Content Cell  |
-| SentencePiece    | 0.4551| 32.14 | 8.380 | 0.4830| 83.70 |
-| FM-MDL           | 0.4353| 32.12 | 8.477 | 0.4647| 84.47 |
+| NMT (baseline)   | 45.29 | 30.18 | 8.147 | 47.93 | 83.34 |
+| BPE              | 46.24 | 31.63 | 8.257 | 49.32 | 83.36 |
+| SentencePiece    | 45.51| **32.14** | 8.380 | 48.30 | 83.70 |
+| FM-MDL           | **43.53**| **32.12** | **8.477** | **46.47** | **84.47** |
+Boldface means no statistically significant difference with the best systems.
 
 PUBLICATIONS
 ------------
