@@ -48,6 +48,7 @@ Comparison on ASPEC Corpus
 
 | Japanese--Chinese| WER   | BLEU  | NIST  | TER   | RIBES |
 | -----------------| ------| ------| ------| ------| ------|
+| NMT (baseline)   | 0.4529| 30.18 | 8.147 | 0.4793| 83.34 |
 | BPE              | Content Cell  |
 | SentencePiece    | 0.4551| 32.14 | 8.380 | 0.4830| 83.70 |
 | FM-MDL           | 0.4353| 32.12 | 8.477 | 0.4647| 84.47 |
