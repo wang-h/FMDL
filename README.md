@@ -53,6 +53,7 @@ Vocab = 20K
 | BPE              | 46.24 | 31.63 | 8.257 | 49.32 | 83.36 |
 | SentencePiece    | 45.51| **32.14** | 8.380 | 48.30 | 83.70 |
 | FM-MDL           | **43.53**| **32.12** | **8.477** | **46.47** | **84.47** |
+
 Boldface means no statistically significant difference with the best systems.
 
 PUBLICATIONS
