@@ -54,6 +54,7 @@ Vocab = 20K
 | SentencePiece    | 45.51| **32.14** | 8.380 | 48.30 | 83.70 |
 | F-MDL            | **43.22**| **32.42** | **8.476** | **46.66** | **84.28** |
 | FM-MDL           | **43.53**| **32.12** | **8.477** | **46.47** | **84.47** |
+
 Boldface means no statistically significant difference with the best systems.
 
 PUBLICATIONS
